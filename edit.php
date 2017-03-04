@@ -12,7 +12,11 @@
 
  ?>
 
-<a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
+<a href="javascript:deleteContact('/delete.php?id=<?= $contact['id']; ?>')" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
+
+
+
+
 <h1>Edit Contact</h1>
 
 <form method="POST" action="/update.php">
