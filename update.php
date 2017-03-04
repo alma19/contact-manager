@@ -4,6 +4,7 @@ include 'database.php';
 
 $stmt = $db->prepare('UPDATE contacts SET first_name = :first_name, last_name = :last_name, title = :title, address = :address, city = :city, state = :state, zipcode = :zipcode, phone = :phone, notes = :notes WHERE id = :id');
 
+//putting new info into database 
 $stmt->execute(array(
   ':id'=> $_POST['id'],
   ':first_name'=> $_POST['first_name'],
@@ -17,4 +18,6 @@ $stmt->execute(array(
   ':notes'=> $_POST['notes']
 ));
 
-header('Location: http://localhost:8080/index.php?updated=true'); 
+
+  //redirecting
+header('Location: http://localhost:8080/index.php?updated=true');

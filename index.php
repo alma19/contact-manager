@@ -8,12 +8,18 @@
 
  <?php if (array_key_exists('updated', $_GET)) : ?>
  <div class="alert alert-success">
-   <p><strong>Update successful!</strong> Your task was updated.</p>
+   <p><strong>Your contact has been updated!</strong></p>
+ </div>
+ <?php endif; ?>
+
+ <?php if (array_key_exists('created', $_GET)) : ?>
+ <div class="alert alert-info">
+   <p><strong>Your contact has been created!</strong></p>
  </div>
  <?php endif; ?>
 
 <h1>Contacts</h1>
-<h3>Current Contacts: <?= count($contacts); ?></h3>
+<h3><span class="text-muted">Current Contacts: <?= count($contacts); ?></span></h3>
 
 <table class="table table-hover table-repsonsive">
   <thead>
