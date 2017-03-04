@@ -6,6 +6,12 @@
   $contacts = $db->query('SELECT * FROM contacts')->fetchAll(PDO::FETCH_ASSOC);
  ?>
 
+ <?php if (array_key_exists('updated', $_GET)) : ?>
+ <div class="alert alert-success">
+   <p><strong>Update successful!</strong> Your task was updated.</p>
+ </div>
+ <?php endif; ?>
+
 <h1>Contacts</h1>
 <h3>Current Contacts: <?= count($contacts); ?></h3>
 
