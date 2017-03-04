@@ -18,6 +18,12 @@
  </div>
  <?php endif; ?>
 
+ <?php if (array_key_exists('deleted', $_GET)) : ?>
+ <div class="alert alert-danger">
+   <p><strong>Your contact has been deleted!</strong></p>
+ </div>
+ <?php endif; ?>
+
 <h1>Contacts</h1>
 <h3><span class="text-muted">Current Contacts: <?= count($contacts); ?></span></h3>
 

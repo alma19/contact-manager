@@ -10,3 +10,14 @@ textarea.form-control {
   resize: none;
   height: 150px;
 }
+
+
+.btn-delete {
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 1109px){
+  .btn-delete {
+    margin-top: 12px;
+  }
+}
