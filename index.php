@@ -9,7 +9,7 @@
 <h1>Contacts</h1>
 <h3>Current Contacts: <?= count($contacts); ?></h3>
 
-<table class="table table-hover">
+<table class="table table-hover table-repsonsive">
   <thead>
     <th>ID</th>
     <th>First Name</th>
@@ -23,19 +23,20 @@
     <th>Notes</th>
   </thead>
 
+  <!-- show contacts on page. when you click on a contact, it'll take you to the edit page for the ID -->
   <tbody>
     <?php foreach ($contacts as $contact) :?>
       <tr>
         <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['id']; ?></a></td>
-        <td><?= $contact['first_name']; ?></td>
-        <td><?= $contact['last_name']; ?></td>
-        <td><?= $contact['title']; ?></td>
-        <td><?= $contact['address']; ?></td>
-        <td><?= $contact['city']; ?></td>
-        <td><?= $contact['state']; ?></td>
-        <td><?= $contact['zipcode']; ?></td>
-        <td><?= $contact['phone']; ?></td>
-        <td><?= $contact['notes']; ?></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['first_name']; ?></a></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['last_name']; ?></a></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['title']; ?></a></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['address']; ?></a></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['city']; ?></a></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['state']; ?></a></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['zipcode']; ?></a></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['phone']; ?></a></td>
+        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['notes']; ?></a></td>
       </tr>
     <?php endforeach; ?>
   </tbody>
