@@ -25,7 +25,7 @@
      <script src="https://use.fontawesome.com/3ddd43fed9.js"></script>
 
    </head>
-   <body>
+   <body id="styleguide">
 
      <nav class="navbar navbar-default">
        <div class="container-fluid">
@@ -55,6 +55,3 @@
      <div class="container">
        <div class="row">
          <div class="col-md-10 col-md-offset-1">
-
-
-  

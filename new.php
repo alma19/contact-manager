@@ -15,33 +15,33 @@
 <!-- new contact input forms  -->
 <form method="POST" action="/create.php">
   <div class="form-group col-lg-2 col-md-2">
-    <label for="contact_title">Title</label>
+    <label for="contact_title"><h4>Title</h4></label>
     <input class="form-control" type="text" name="title" id="contact_title" value="" placeholder="Title" />
   </div>
 
   <div class="form-group col-lg-5 col-md-5">
-    <label for="contact_first_name">First Name</label>
+    <label for="contact_first_name"><h4>First Name</h4></label>
     <input class="form-control" type="text" name="first_name" id="contact_first_name" value="" placeholder="First Name" />
   </div>
 
   <div class="form-group col-lg-5 col-md-5">
-    <label for="contact_last_name">Last Name</label>
+    <label for="contact_last_name"><h4>Last Name</h4></label>
     <input class="form-control" type="text" name="last_name" id="contact_last_name" value=""  placeholder="Last Name"/>
   </div>
 
 
   <div class="form-group col-lg-12">
-    <label for="contact_address">Address</label>
+    <label for="contact_address"><h4>Address</h4></label>
     <input class="form-control" type="text" name="address" id="contact_address" value="" placeholder="Address" />
   </div>
 
   <div class="form-group col-lg-7 col-lg-7">
-    <label for="contact_city">City</label>
+    <label for="contact_city"><h4>City</h4></label>
     <input class="form-control" type="text" name="city" id="contact_city" value="" placeholder="City" />
   </div>
 
   <div class="form-group col-lg-2 col-md-2">
-    <label for="contact_state">State</label>
+    <label for="contact_state"><h4>State</h4></label>
     <select name="state" id="contact_state" value="" class="form-control">
       <option value="" selected>Select State</option>
       <option value="AL">Alabama</option>
@@ -98,17 +98,17 @@
   </div>
 
   <div class="form-group col-lg-2 col-md-2">
-    <label for="contact_zipcode">Zip Code</label>
+    <label for="contact_zipcode"><h4>Zip Code</h4></label>
     <input class="form-control" type="text" name="zipcode" id="contact_zipcode" value="" placeholder="Zip Code" />
   </div>
 
   <div class="form-group col-lg-12">
-    <label for="contact_phone">Phone Number</label>
+    <label for="contact_phone"><h4>Phone Number</h4></label>
     <input class="form-control" type="text" name="phone" id="contact_phone" value="" placeholder="Phone Number" />
   </div>
 
   <div class="form-group col-lg-12">
-    <label for="contact_notes">Notes</label>
+    <label for="contact_notes"><h4>Notes</h4></label>
     <textarea class="form-control" name="notes" id="contact_notes" placeholder="Notes"></textarea>
   </div>
 

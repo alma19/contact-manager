@@ -2,6 +2,9 @@
 
 /*GLOBAL STYLES */
 
+body {
+  background: #411147;
+}
 p {
   font-family: 'Roboto', sans-serif;
 }
@@ -14,6 +17,10 @@ h1, h2, h3, h4, h5, th {
   font-family: 'Ubuntu', sans-serif !important;
 }
 
+#styleguide {
+  background-color: white;
+}
+
 .container {
   padding-top: 15px;
 }
@@ -23,22 +30,19 @@ textarea.form-control {
   height: 150px;
 }
 
+.alert {
+  color: #6f1e7a;
+  background-color: #D2B8F3;
+  border-color: #6f1e7a;
+}
 
 .btn-delete {
   margin-top: 32px;
 }
 
-.fa-times {
-  color: red;
-}
 
 .fa {
   padding: 5px;
-}
-
-
-tbody {
-  background-color: #D2B8F3;
 }
 
 @media screen and (max-width: 1109px){
@@ -46,6 +50,40 @@ tbody {
     margin-top: 12px;
   }
 }
+
+/*NAV STYLES*/
+nav {
+ font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-default {
+  background-color: #0e0d0a;
+  border-color: #0e0d0a; 
+}
+
+.navbar-default .navbar-brand {
+  color: #9a9a9a;
+}
+ .navbar-default .navbar-nav>li>a {
+   color: #9a9a9a;
+ }
+
+/*INDEX PAGE STYLES*/
+tbody {
+  background-color: #D2B8F3;
+}
+
+thead {
+  background-color: #503573;
+  color: #dadada;
+}
+
+.icon:hover {
+  color: #cccccc;
+  text-shadow: 0px 1px 0px black;
+}
+
+
 /* STYLE GUIDE */
 /*COLORS */
 .colors {
@@ -104,12 +142,12 @@ tbody {
 /*TYPOGRAPHY */
 
 h1{
-  color: #8148f3;
+  color: #AA70F5;
 }
 
 h3 {
   font-weight: 700;
-  color: #1b0f34;
+  color: #503573;
 }
 
 h2 {

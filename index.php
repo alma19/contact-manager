@@ -6,19 +6,21 @@
   $contacts = $db->query('SELECT * FROM contacts')->fetchAll(PDO::FETCH_ASSOC);
  ?>
 
-
+ <!-- reads from 'update', gives you alert  -->
  <?php if (array_key_exists('updated', $_GET)) : ?>
  <div class="alert alert-success">
    <p><strong>Your contact has been updated!</strong></p>
  </div>
  <?php endif; ?>
 
+<!-- reads from 'create', gives you alert  -->
  <?php if (array_key_exists('created', $_GET)) : ?>
  <div class="alert alert-info">
    <p><strong>Your contact has been created!</strong></p>
  </div>
  <?php endif; ?>
 
+ <!-- reads from 'delete', gives you alert  -->
  <?php if (array_key_exists('deleted', $_GET)) : ?>
  <div class="alert alert-danger">
    <p><strong>Your contact has been deleted!</strong></p>
@@ -30,7 +32,7 @@
 
 
 
-<table class="table table-hover">
+<table class="table table-hover table-bordered">
   <thead>
     <th>ID</th>
     <th>First Name</th>
@@ -51,8 +53,16 @@
         <td><?= $contact['state']; ?></td>
         <!-- i stole the idea of using the edit and delete symbols from alexis so shoutout 2 her  -->
         <td>
-          <a href="/edit.php?id=<?=$contact['id'];?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-          <a href="javascript:deleteContact('/delete.php?id=<?= $contact['id']; ?>')"><i class="fa fa-trash" aria-hidden="true"></i></a>
+
+            <a class="icon" href="/edit.php?id=<?=$contact['id'];?>">
+              <i class="fa fa-pencil-square-o" title="Edit" aria-hidden="true"></i>
+            </a>
+
+          <a class="icon" href="javascript:deleteContact('/delete.php?id=<?= $contact['id']; ?>')">
+            <i class="fa fa-trash" aria-hidden="true" title="Delete"></i>
+          </a>
+
+
         </td>
       </tr>
     <?php endforeach; ?>

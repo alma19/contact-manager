@@ -26,33 +26,33 @@
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 
   <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
-    <label for="contact_title">Title</label>
+    <label for="contact_title"><h4>Title</h4></label>
     <input class="form-control" type="text" name="title" id="contact_title" value="<?= $contact['title']; ?>" />
   </div>
 
   <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-12">
-    <label for="contact_first_name">First Name</label>
+    <label for="contact_first_name"><h4>First Name</h4></label>
     <input class="form-control" type="text" name="first_name" id="contact_first_name" value="<?= $contact['first_name']; ?>" />
   </div>
 
   <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-12">
-    <label for="contact_last_name">Last Name</label>
+    <label for="contact_last_name"><h4>Last Name</h4></label>
     <input class="form-control" type="text" name="last_name" id="contact_last_name" value="<?= $contact['last_name']; ?>" />
   </div>
 
 
   <div class="form-group col-lg-12 col-md-12">
-    <label for="contact_address">Address</label>
+    <label for="contact_address"><h4>Address</h4></label>
     <input class="form-control" type="text" name="address" id="contact_address" value="<?= $contact['address']; ?>" />
   </div>
 
   <div class="form-group col-lg-7 col-md-7">
-    <label for="contact_city">City</label>
+    <label for="contact_city"><h4>City</h4></label>
     <input class="form-control" type="text" name="city" id="contact_city" value="<?= $contact['city']; ?>" />
   </div>
 
   <div class="form-group col-lg-2 col-md-2">
-    <label for="contact_state">State</label>
+    <label for="contact_state"><h4>State</h4></label>
     <select name="state" id="contact_state" value="<?= $contact['state']; ?>" class="form-control">
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
@@ -108,17 +108,17 @@
   </div>
 
   <div class="form-group col-lg-2 col-md-2">
-    <label for="contact_zipcode">Zip Code</label>
+    <label for="contact_zipcode"><h4>Zip Code</h4></label>
     <input class="form-control" type="text" name="zipcode" id="contact_zipcode" value="<?= $contact['zipcode']; ?>" />
   </div>
 
   <div class="form-group col-lg-12 col-md-12">
-    <label for="contact_phone">Phone Number</label>
+    <label for="contact_phone"><h4>Phone Number</h4></label>
     <input class="form-control" type="text" name="phone" id="contact_phone" value="<?= $contact['phone']; ?>" />
   </div>
 
   <div class="form-group col-lg-12 col-md-12">
-    <label for="contact_notes">Notes</label>
+    <label for="contact_notes"><h4>Notes</h4></label>
     <textarea class="form-control" name="notes" id="contact_notes"><?=$contact['notes'];?></textarea>
   </div>
 
