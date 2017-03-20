@@ -12,42 +12,46 @@
 
  ?>
 
-<a href="javascript:deleteContact('/delete.php?id=<?= $contact['id']; ?>')" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
+<div class="row">
+  <a href="javascript:deleteContact('/delete.php?id=<?= $contact['id']; ?>')" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
 
-
-
-
-<h1>Edit Contact</h1>
+<h1>
+    <div>
+    Edit Contact
+  </div>
+</div>
+</h1>
 
 <form method="POST" action="/update.php">
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 
-  <div class="form-group">
-    <label for="contact_first_name">First Name</label>
-    <input class="form-control" type="text" name="first_name" id="contact_first_name" value="<?= $contact['first_name']; ?>" />
-  </div>
-
-  <div class="form-group">
-    <label for="contact_last_name">Last Name</label>
-    <input class="form-control" type="text" name="last_name" id="contact_last_name" value="<?= $contact['last_name']; ?>" />
-  </div>
-
-  <div class="form-group">
+  <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
     <label for="contact_title">Title</label>
     <input class="form-control" type="text" name="title" id="contact_title" value="<?= $contact['title']; ?>" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-12">
+    <label for="contact_first_name">First Name</label>
+    <input class="form-control" type="text" name="first_name" id="contact_first_name" value="<?= $contact['first_name']; ?>" />
+  </div>
+
+  <div class="form-group col-lg-5 col-md-5 col-sm-5 col-xs-12">
+    <label for="contact_last_name">Last Name</label>
+    <input class="form-control" type="text" name="last_name" id="contact_last_name" value="<?= $contact['last_name']; ?>" />
+  </div>
+
+
+  <div class="form-group col-lg-12 col-md-12">
     <label for="contact_address">Address</label>
     <input class="form-control" type="text" name="address" id="contact_address" value="<?= $contact['address']; ?>" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-7 col-md-7">
     <label for="contact_city">City</label>
     <input class="form-control" type="text" name="city" id="contact_city" value="<?= $contact['city']; ?>" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-2 col-md-2">
     <label for="contact_state">State</label>
     <select name="state" id="contact_state" value="<?= $contact['state']; ?>" class="form-control">
       <option value="AL">Alabama</option>
@@ -103,17 +107,17 @@
     </select>
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-2 col-md-2">
     <label for="contact_zipcode">Zip Code</label>
     <input class="form-control" type="text" name="zipcode" id="contact_zipcode" value="<?= $contact['zipcode']; ?>" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-12 col-md-12">
     <label for="contact_phone">Phone Number</label>
     <input class="form-control" type="text" name="phone" id="contact_phone" value="<?= $contact['phone']; ?>" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-12 col-md-12">
     <label for="contact_notes">Notes</label>
     <textarea class="form-control" name="notes" id="contact_notes"><?=$contact['notes'];?></textarea>
   </div>

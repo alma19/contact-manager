@@ -5,37 +5,42 @@
 ?>
 
 
-<h1>Create New Contact</h1>
+<h1>
+  <div>
+    New Contact
+  </div>
+</h1>
 
 
 <!-- new contact input forms  -->
 <form method="POST" action="/create.php">
-  <div class="form-group">
-    <label for="contact_first_name">First Name</label>
-    <input class="form-control" type="text" name="first_name" id="contact_first_name" value="" placeholder="First Name" />
-  </div>
-
-  <div class="form-group">
-    <label for="contact_last_name">Last Name</label>
-    <input class="form-control" type="text" name="last_name" id="contact_last_name" value=""  placeholder="Last Name"/>
-  </div>
-
-  <div class="form-group">
+  <div class="form-group col-lg-2 col-md-2">
     <label for="contact_title">Title</label>
     <input class="form-control" type="text" name="title" id="contact_title" value="" placeholder="Title" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-5 col-md-5">
+    <label for="contact_first_name">First Name</label>
+    <input class="form-control" type="text" name="first_name" id="contact_first_name" value="" placeholder="First Name" />
+  </div>
+
+  <div class="form-group col-lg-5 col-md-5">
+    <label for="contact_last_name">Last Name</label>
+    <input class="form-control" type="text" name="last_name" id="contact_last_name" value=""  placeholder="Last Name"/>
+  </div>
+
+
+  <div class="form-group col-lg-12">
     <label for="contact_address">Address</label>
     <input class="form-control" type="text" name="address" id="contact_address" value="" placeholder="Address" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-7 col-lg-7">
     <label for="contact_city">City</label>
     <input class="form-control" type="text" name="city" id="contact_city" value="" placeholder="City" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-2 col-md-2">
     <label for="contact_state">State</label>
     <select name="state" id="contact_state" value="" class="form-control">
       <option value="" selected>Select State</option>
@@ -92,17 +97,17 @@
     </select>
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-2 col-md-2">
     <label for="contact_zipcode">Zip Code</label>
     <input class="form-control" type="text" name="zipcode" id="contact_zipcode" value="" placeholder="Zip Code" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-12">
     <label for="contact_phone">Phone Number</label>
     <input class="form-control" type="text" name="phone" id="contact_phone" value="" placeholder="Phone Number" />
   </div>
 
-  <div class="form-group">
+  <div class="form-group col-lg-12">
     <label for="contact_notes">Notes</label>
     <textarea class="form-control" name="notes" id="contact_notes" placeholder="Notes"></textarea>
   </div>

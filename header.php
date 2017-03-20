@@ -14,8 +14,15 @@
 
      <!-- bootstrap -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+
      <link rel="stylesheet" href="/css/style.css">
      <script src="/js/script.js"></script>
+
+     <!--FONT AWESOME CDN -->
+     <script src="https://use.fontawesome.com/3ddd43fed9.js"></script>
 
    </head>
    <body>
@@ -39,6 +46,7 @@
            <ul class="nav navbar-nav navbar-right">
              <li><a href="/index.php">All Contacts</a></li>
              <li><a href="/new.php">New Contact</a></li>
+             <li><a href="/style.php">Style Guide</a></li>
            </ul>
          </div><!-- /.navbar-collapse -->
        </div><!-- /.container-fluid -->
