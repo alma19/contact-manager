@@ -51,7 +51,7 @@ textarea.form-control {
 .colors {
   margin-bottom: 10px;
 }
-.box {
+.sizing {
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -59,6 +59,7 @@ textarea.form-control {
   width: 75px;
   height: 75px;
   border: 1px solid black;
+  margin-bottom: 5px;
 }
 
 #box1 {
@@ -99,16 +100,23 @@ textarea.form-control {
 
 /*TYPOGRAPHY */
 
-.typographys {
-  margin-top: 20px;
-  margin-bottom: 10px;
+h3 {
+  font-weight: 700;
+  color: #3D2273;
 }
+
+h2 {
+  color: #0E0D0A; 
+}
+
 .ubuntu {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
 }
 
 .roboto {
   font-family: 'Roboto', sans-serif;
+  font-size: 25px;
 }
 
 .light {
@@ -125,4 +133,10 @@ textarea.form-control {
 
 .headings {
   margin-bottom: 10px;
+}
+
+
+/*UI ELEMENTS*/
+.input {
+  margin-top: 10px;
 }
