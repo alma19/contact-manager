@@ -1,7 +1,3 @@
-/*h1, h3 {
-  text-align: center;
-}*/
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Ubuntu:300,400,700');
 
 /*GLOBAL STYLES */
@@ -32,12 +28,6 @@ textarea.form-control {
   margin-top: 32px;
 }
 
-@media screen and (max-width: 1109px){
-  .btn-delete {
-    margin-top: 12px;
-  }
-}
-
 .fa-times {
   color: red;
 }
@@ -46,6 +36,16 @@ textarea.form-control {
   padding: 5px;
 }
 
+
+tbody {
+  background-color: #D2B8F3;
+}
+
+@media screen and (max-width: 1109px){
+  .btn-delete {
+    margin-top: 12px;
+  }
+}
 /* STYLE GUIDE */
 /*COLORS */
 .colors {
@@ -63,19 +63,19 @@ textarea.form-control {
 }
 
 #box1 {
-  background-color: #8148f3;
+  background-color: #D2B8F3;
 }
 
 #box2 {
-  background-color: #3D2273;
+  background-color: #AA70F5;
 }
 
 #box3 {
-  background-color: #1B0F34;
+  background-color: #503573;
 }
 
 #box4 {
-  background-color: #E33DFA;
+  background-color: #BC6CC6;
 }
 
 #box5 {
@@ -83,7 +83,7 @@ textarea.form-control {
 }
 
 #box6 {
-  background-color: #350E3B;
+  background-color: #411147;
 }
 
 #box7 {
@@ -98,16 +98,34 @@ textarea.form-control {
   background-color: #0E0D0A;
 }
 
+.fa {
+  color: #0E0D0A;
+}
 /*TYPOGRAPHY */
+
+h1{
+  color: #8148f3;
+}
 
 h3 {
   font-weight: 700;
-  color: #3D2273;
+  color: #1b0f34;
 }
 
 h2 {
-  color: #0E0D0A; 
+  color: #0E0D0A;
 }
+
+h4 {
+  color: #9A9A9A;
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+
 
 .ubuntu {
   font-family: 'Ubuntu', sans-serif;
@@ -139,4 +157,47 @@ h2 {
 /*UI ELEMENTS*/
 .input {
   margin-top: 10px;
+}
+
+.btn-sm {
+  background-color: #AA70F5;
+  border-color: #AA70F5;
+  color: #dadada;
+}
+
+.btn-sm:hover {
+  background-color: #503573;
+  color: #dadada;
+}
+
+.btn-md {
+  background-color: #503573;
+  color: #AA70F5;
+}
+
+.btn-md:hover {
+  background-color: #D2B8F3;
+  color: #0e0d0a;
+}
+
+.btn-lg {
+  background-color: #D2B8F3;
+  color: #0e0d0a;
+}
+
+.btn-lg:hover {
+  background-color: #dadada;
+  color: #0e0d0a;
+}
+
+input[type=text] {
+  border: 1px solid #dadada;
+}
+
+select {
+  border: 1px solid #dadada;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 1px #AA70F5;
 }

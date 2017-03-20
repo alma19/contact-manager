@@ -112,7 +112,7 @@
     <textarea class="form-control" name="notes" id="contact_notes" placeholder="Notes"></textarea>
   </div>
 
-  <button class="btn btn-primary">Create New Contact</button>
+  <button class="btn btn-sm">Create New Contact</button>
 
 </form>
 

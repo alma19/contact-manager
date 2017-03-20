@@ -6,7 +6,7 @@
   $contacts = $db->query('SELECT * FROM contacts')->fetchAll(PDO::FETCH_ASSOC);
  ?>
 
- 
+
  <?php if (array_key_exists('updated', $_GET)) : ?>
  <div class="alert alert-success">
    <p><strong>Your contact has been updated!</strong></p>
@@ -26,9 +26,11 @@
  <?php endif; ?>
 
 <h1>Contacts</h1>
-<h3><span class="text-muted">Current Contacts: <?= count($contacts); ?></span></h3>
+<h4>Current Contacts: <?= count($contacts); ?></span></h4>
 
-<table class="table table-hover table-repsonsive table-bordered table-striped">
+
+
+<table class="table table-hover">
   <thead>
     <th>ID</th>
     <th>First Name</th>
@@ -42,11 +44,11 @@
   <tbody>
     <?php foreach ($contacts as $contact) :?>
       <tr>
-        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['id']; ?></a></td>
-        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['first_name']; ?></a></td>
-        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['last_name']; ?></a></td>
-        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['city']; ?></a></td>
-        <td><a href="/edit.php?id=<?=$contact['id'];?>"><?= $contact['state']; ?></a></td>
+        <td><?= $contact['id']; ?></td>
+        <td><?= $contact['first_name']; ?></td>
+        <td><?= $contact['last_name']; ?></td>
+        <td><?= $contact['city']; ?></td>
+        <td><?= $contact['state']; ?></td>
         <!-- i stole the idea of using the edit and delete symbols from alexis so shoutout 2 her  -->
         <td>
           <a href="/edit.php?id=<?=$contact['id'];?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
@@ -56,5 +58,6 @@
     <?php endforeach; ?>
   </tbody>
 </table>
+
 
 <?php include 'footer.php'; ?>

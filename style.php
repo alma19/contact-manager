@@ -12,24 +12,24 @@ include 'header.php'
   </div>
   <div class="col-lg-2 col-md-2 col-xs-4 sizing">
     <div class="color-box" id="box1"></div>
-    <p class="color-text">#8148F3</p>
+    <p class="color-text">#D2B8F3 </p>
   </div>
 
   <div class="col-lg-2 col-md-2 col-xs-4 sizing">
     <div class="color-box" id="box2"></div>
-    <p class="color-text">#3D2273</p>
+    <p class="color-text"> #AA70F5 </p>
   </div>
 
   <div class="col-lg-2 col-md-2 col-xs-4 sizing">
     <div class="color-box" id="box3"></div>
-    <p class="color-text">#1B0F34</p>
+    <p class="color-text">  #503573</p>
   </div>
 
     <div class="col-lg-6 col-md-6"></div>
 
     <div class="col-lg-2 col-md-2 col-xs-4 sizing">
       <div class="color-box" id="box4"></div>
-      <p class="color-text">#E33DFA</p>
+      <p class="color-text">#BC6CC6</p>
     </div>
 
     <div class="col-lg-2 col-md-2 col-xs-4 sizing">
@@ -40,7 +40,7 @@ include 'header.php'
 
     <div class="col-lg-2 col-md-2 col-xs-4 sizing">
       <div class="color-box" id="box6"></div>
-      <p class="color-text">#350E3B</p>
+      <p class="color-text">#411147</p>
     </div>
 
     <div class="col-lg-6 col-md-6"></div>
@@ -137,17 +137,17 @@ include 'header.php'
 
 
   <div class="col-lg-6 col-md-6 sizing">
-    <button class="btn btn-primary btn-sm">.button.small</button>
+    <button class="btn btn-primary btn-sm">Small Button</button>
   </div>
 
   <div class="col-lg-6 col-md-6"></div>
   <div class="col-lg-6 col-md-6 sizing">
-    <button class="btn btn-primary btn-md">.button.medium</button>
+    <button class="btn btn-primary btn-md">Medium Buttom</button>
   </div>
 
   <div class="col-lg-6 col-md-6"></div>
   <div class="col-lg-6 col-md-6 sizing">
-    <button class="btn btn-primary btn-lg">.button.large</button>
+    <button class="btn btn-primary btn-lg">Large Button</button>
   </div>
 
   <div class="col-lg-6 col-md-6">
@@ -156,7 +156,7 @@ include 'header.php'
 
   <div class="col-lg-6 col-md-6"></div>
   <div class="form-group input col-lg-6 col-md-6">
-    <label>Text Input</label>
+    <label for="text-input" id="text-input" name="text-input">Text Input</label>
     <input class="form-control" type="text" value="" placeholder="Text Input" />
   </div>
 
@@ -176,6 +176,7 @@ include 'header.php'
     <textarea class="form-control" placeholder="Textarea Input"></textarea>
   </div>
 
+
   <div class="col-lg-6 col-md-6">
     <h3>Lists</h3>
   </div>
@@ -183,18 +184,18 @@ include 'header.php'
   <div class="col-lg-3 col-md-3 sizing">
     <h4> ul | Unordered List</h4>
     <ul>
-      <li>li | List item 1</li>
-      <li> li | List item 2</li>
-      <li> li | List item 3</li>
+      <li>li </li>
+      <li> li </li>
+      <li> li </li>
     </ul>
   </div>
 
   <div class="col-lg-3 col-md-3 sizing">
     <h4> ol | Ordered List</h4>
     <ol>
-      <li>li | List item 1</li>
-      <li> li | List item 2</li>
-      <li> li | List item 3</li>
+      <li>li </li>
+      <li> li</li>
+      <li> li</li>
     </ol>
   </div>
 
