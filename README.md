@@ -1,6 +1,8 @@
 # contact-manager
 This contact manager is a CRUD application that was built using PHP and MYSQL. It includes a style guide as well.
 
+[My portfolio.](http://almawashington.com)
+
 ## Installation
 
 1. Clone this repository.
