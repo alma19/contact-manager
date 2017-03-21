@@ -12,6 +12,7 @@
 
  ?>
 
+<!-- are you sure you want to delete? -->
 <div class="row">
   <a href="javascript:deleteContact('/delete.php?id=<?= $contact['id']; ?>')" class="btn btn-xs pull-right btn-delete">Delete Contact</a>
 
@@ -45,13 +46,13 @@
     <input class="form-control" type="text" name="address" id="contact_address" value="<?= $contact['address']; ?>" />
   </div>
 
-  <div class="form-group col-lg-7 col-md-7">
+  <div class="form-group col-lg-6 col-md-6">
     <label for="contact_city"><h4>City</h4></label>
     <input class="form-control" type="text" name="city" id="contact_city" value="<?= $contact['city']; ?>" />
   </div>
 
-  <!-- automatically pulls up whichever state was originally selected -->
-  <div class="form-group col-lg-2 col-md-2">
+  <!-- automatically pulls up whichever state was originally selected. shoutout to kate she showed me how to do this -->
+  <div class="form-group col-lg-3 col-md-3">
     <label for="contact_state"><h4>State</h4></label>
     <select name="state" id="contact_state" value="<?= $contact['state']; ?>" class="form-control">
       <option value="AL"<?= ($contact['state'] == 'AL') ? ' selected' : '' ?>>Alabama</option>

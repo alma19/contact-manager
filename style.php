@@ -207,21 +207,21 @@ include 'styleheader.php'
     <h2>Icons</h2>
   </div>
 
-  <div class="col-lg-3 col-md-3 sizing">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sizing">
     <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
   </div>
 
-  <div class="col-lg-3 col-md-3 sizing">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sizing">
     <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
   </div>
 
 
   <div class="col-lg-6 col-md-6"></div>
-  <div class="col-lg-3 col-md-3 sizing">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sizing">
     <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
   </div>
 
-  <div class="col-lg-3 col-md-3 sizing">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 sizing">
     <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
   </div>
 

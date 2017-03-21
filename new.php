@@ -35,12 +35,12 @@
     <input class="form-control" type="text" name="address" id="contact_address" value="" placeholder="Address" />
   </div>
 
-  <div class="form-group col-lg-7 col-lg-7">
+  <div class="form-group col-lg-6 col-lg-6">
     <label for="contact_city"><h4>City</h4></label>
     <input class="form-control" type="text" name="city" id="contact_city" value="" placeholder="City" />
   </div>
 
-  <div class="form-group col-lg-2 col-md-2">
+  <div class="form-group col-lg-3 col-md-3">
     <label for="contact_state"><h4>State</h4></label>
     <select name="state" id="contact_state" value="" class="form-control">
       <option value="" selected>Select State</option>
