@@ -13,13 +13,12 @@
  ?>
 
 <div class="row">
-  <a href="javascript:deleteContact('/delete.php?id=<?= $contact['id']; ?>')" class="btn btn-danger btn-xs pull-right btn-delete">Delete Contact</a>
+  <a href="javascript:deleteContact('/delete.php?id=<?= $contact['id']; ?>')" class="btn btn-xs pull-right btn-delete">Delete Contact</a>
 
 <h1>
-    <div>
+    <div class="page-btn">
     Edit Contact
   </div>
-</div>
 </h1>
 
 <form method="POST" action="/update.php">
@@ -122,7 +121,7 @@
     <textarea class="form-control" name="notes" id="contact_notes"><?=$contact['notes'];?></textarea>
   </div>
 
-  <button class="btn btn-primary">Save Contact</button>
+  <button class="btn btn-sm page-btn">Save Contact</button>
 </form>
 
 <?php include 'footer.php'; ?>

@@ -6,7 +6,7 @@
 
 
 <h1>
-  <div>
+  <div class="col-lg-12 col-md-12">
     New Contact
   </div>
 </h1>
@@ -112,7 +112,7 @@
     <textarea class="form-control" name="notes" id="contact_notes" placeholder="Notes"></textarea>
   </div>
 
-  <button class="btn btn-sm">Create New Contact</button>
+  <button class="btn btn-sm page-btn">Create New Contact</button>
 
 </form>
 

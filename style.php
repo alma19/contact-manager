@@ -156,13 +156,13 @@ include 'styleheader.php'
 
   <div class="col-lg-6 col-md-6"></div>
   <div class="form-group input col-lg-6 col-md-6">
-    <label for="text-input" id="text-input" name="text-input">Text Input</label>
+    <label for="text-input" id="text-input" name="text-input"><h4>Text Input</h4></label>
     <input class="form-control" type="text" value="" placeholder="Text Input" />
   </div>
 
   <div class="col-lg-6 col-md-6"></div>
   <div class="form-group col-lg-6 col-md-6">
-    <label>Select Input</label>
+    <label><h4>Select Input</h4></label>
     <select value="" class="form-control">
       <option value="Select here" selected>
         Select here
@@ -172,7 +172,7 @@ include 'styleheader.php'
 
   <div class="col-lg-6 col-md-6"></div>
   <div class="form-group col-lg-6 col-md-6">
-    <label>Textarea Input</label>
+    <label><h4>Textarea Input</h4></label>
     <textarea class="form-control" placeholder="Textarea Input"></textarea>
   </div>
 

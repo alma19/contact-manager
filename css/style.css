@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Ubuntu:300,400,700');
 
-/*GLOBAL STYLES */
 
 body {
   background: #411147;
+  margin-bottom: 50px;
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -11,6 +11,12 @@ p {
 
 a {
   font-family: 'Roboto', sans-serif !important;
+  color: #dadada;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #AA70F5;
 }
 
 h1, h2, h3, h4, h5, th {
@@ -40,6 +46,10 @@ textarea.form-control {
   margin-top: 32px;
 }
 
+.page-btn {
+  margin-left: 12px;
+}
+
 
 .fa {
   padding: 5px;
@@ -58,16 +68,28 @@ nav {
 
 .navbar-default {
   background-color: #0e0d0a;
-  border-color: #0e0d0a; 
+  border-color: #0e0d0a;
 }
+
 
 .navbar-default .navbar-brand {
-  color: #9a9a9a;
+  color: #dadada;
+}
+
+.navbar-default:hover .navbar-brand:hover{
+  color: #AA70F5;
 }
  .navbar-default .navbar-nav>li>a {
-   color: #9a9a9a;
+   color: #dadada;
  }
 
+ .navbar-default:hover .navbar-nav>li>a:hover {
+   color: #AA70F5;
+ }
+
+.credits {
+  text-align: center;
+}
 /*INDEX PAGE STYLES*/
 tbody {
   background-color: #D2B8F3;
@@ -81,6 +103,19 @@ thead {
 .icon:hover {
   color: #cccccc;
   text-shadow: 0px 1px 0px black;
+}
+
+/*FOOTER*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  height: 40px;
+  color: #dadada;
+  padding: 10px;
+  text-align: center;
 }
 
 
@@ -199,32 +234,37 @@ h5 {
 
 .btn-sm {
   background-color: #AA70F5;
-  border-color: #AA70F5;
+  border-color: #dadada;
   color: #dadada;
 }
 
-.btn-sm:hover {
+.btn-sm:hover, .btn-sm:active {
   background-color: #503573;
+  border-color: #dadada;
   color: #dadada;
 }
 
 .btn-md {
   background-color: #503573;
+  border-color: #AA70F5;
   color: #AA70F5;
 }
 
-.btn-md:hover {
+.btn-md:hover, .btn-md:active {
   background-color: #D2B8F3;
+  border-color: #0e0d0a;
   color: #0e0d0a;
 }
 
-.btn-lg {
+.btn-lg, .btn-xs {
   background-color: #D2B8F3;
+  border-color: #0e0d0a;
   color: #0e0d0a;
 }
 
-.btn-lg:hover {
+.btn-lg:hover, .btn-xs:hover, .btn-lg:active, .btn-xs:active, .btn-xs:visited {
   background-color: #dadada;
+  border-color: #0e0d0a;
   color: #0e0d0a;
 }
 
@@ -237,5 +277,7 @@ select {
 }
 
 .form-control:focus {
-  box-shadow: 0 0 1px #AA70F5;
+  border-color:  #aa70f5;
+  box-shadow: 0 0 5px #AA70F5;
+  outline: 0 none;
 }

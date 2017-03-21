@@ -1,14 +1,14 @@
-      <footer class="footer">
-        <div class="container">
-          <p>
-            Footer here.
-          </p>
-        </div>
-      </footer>
-
       </div>
 
     </div>
+
+
+      <div class="footer">
+        <a href="http://almawashington.com" target="_blank">Portfolio</a> |
+        <a href="https://github.com/alma19" target="_blank">Github</a> |
+        <a href="/credits.php">Credits</a>
+      </div>
+
 
 
     <!-- <script src="/js/jquery-3.1.1.slim.min.js"></script>
